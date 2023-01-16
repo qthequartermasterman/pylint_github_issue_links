@@ -1,0 +1,1 @@
+from github_check import GitHubIssueChecker, register
