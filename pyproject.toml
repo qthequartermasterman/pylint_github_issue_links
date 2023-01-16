@@ -25,7 +25,6 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "black",
-    "freezegun",
     "isort",
 ]
 
@@ -42,7 +41,7 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["cache_pandas"]
+packages = ["pylint_github_issue_links"]
 
 [tool.black]
 line-length = 120
