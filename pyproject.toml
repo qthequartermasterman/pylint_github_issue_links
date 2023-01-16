@@ -1,0 +1,49 @@
+[project]
+name = "pylint_github_issue_links"
+version = "0.0.0"
+description = "Check that GitHub issues linked to in Python Source code are not closed (usually meaning there exists a fix)."
+authors = [
+    { name = "Andrew Sansom", email = "andrew@euleriancircuit.com" },
+]
+license = { "text" = "MIT" }
+readme = "README.md"
+requires-python = ">=3.7"
+
+keywords = ["pylint", "github", "issues"]
+
+classifiers = [
+    "Topic :: Software Development",
+    "Development Status :: 3 - Alpha"
+]
+
+dependencies = [
+    "astroid",
+    "pylint",
+    "requests"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "freezegun",
+    "isort",
+]
+
+[project.urls]
+homepage = "https://github.com/qthequartermasterman/pylint_github_issue_links"
+documentation = "https://github.com/qthequartermasterman/pylint_github_issue_links"
+repository = "https://github.com/qthequartermasterman/pylint_github_issue_links"
+
+[build-system]
+requires = [
+    "setuptools >= 35.0.2",
+    "setuptools_scm >= 2.0.0, <3"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["cache_pandas"]
+
+[tool.black]
+line-length = 120
+target_version = ['py38', 'py39', 'py310', 'py311']
